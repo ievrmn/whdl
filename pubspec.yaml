@@ -1,0 +1,42 @@
+name: kitkat_live
+description: تطبيق KitKat Live للبث المباشر والغرف الصوتية مع هدايا ومراسلة خاصة.
+
+publish_to: 'none' # هذا يجعل المشروع محلي فقط
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # الحزم الأساسية
+  firebase_core: ^2.15.0
+  firebase_auth: ^4.6.3
+  cloud_firestore: ^4.7.1
+  firebase_storage: ^11.2.2
+
+  # WebRTC للبث الصوتي/الفيديو
+  flutter_webrtc: ^0.9.30
+
+  # State management (اختياري حسب المشروع)
+  provider: ^6.0.5
+
+  # للتعامل مع UUID
+  uuid: ^3.0.7
+
+  # رسوميات وواجهة مستخدم
+  flutter_svg: ^1.1.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/    # صور الغرف والرموز والهدايا

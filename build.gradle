@@ -1,0 +1,25 @@
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.example.kitkatlive"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            shrinkResources false
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation "org.webrtc:google-webrtc:1.0.32006"
+    implementation 'com.android.support:multidex:1.0.3'
+}
